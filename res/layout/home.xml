@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:baselineAligned="false" android:orientation="vertical"
+	android:background="@drawable/search_bg">
+	<TextView android:text="@string/baike" android:layout_height="wrap_content"
+		android:textSize="40dp" android:id="@+id/textView1"
+		android:layout_width="wrap_content" android:layout_gravity="center"
+		android:textColor="#bf0000bf" android:layout_margin="5dip"></TextView>
+	<RadioGroup android:layout_width="wrap_content" android:id="@+id/radioGroup1" android:layout_gravity="center" android:layout_height="wrap_content">
+		<RadioButton android:layout_width="wrap_content"
+			android:layout_gravity="center" android:id="@+id/radioButton1"
+			android:layout_margin="5dip" android:textSize="30dp"
+			android:layout_height="wrap_content" android:drawableRight="@drawable/wiki" android:checked="true"></RadioButton>
+		<RadioButton android:layout_width="wrap_content"
+			android:layout_gravity="center" android:id="@+id/radioButton2"
+			android:textSize="30dp"
+			android:layout_height="wrap_content" android:drawableRight="@drawable/baidu" android:layout_margin="5dip"></RadioButton>
+	</RadioGroup>
+	<Button android:id="@+id/button1" android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:text="@string/enter"
+		android:textSize="30dp" android:layout_gravity="center"
+		android:background="@drawable/attend_do_n" android:layout_margin="5dip"></Button>
+</LinearLayout>
+

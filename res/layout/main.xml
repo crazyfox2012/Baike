@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost android:layout_width="fill_parent"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" android:id="@android:id/tabhost">
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip"
+			android:layout_weight="1.0" android:id="@android:id/tabcontent">
+		</FrameLayout>
+		<TabWidget android:visibility="gone"
+			android:layout_width="fill_parent" android:layout_height="wrap_content"
+			android:layout_weight="0.0" android:id="@android:id/tabs"/>
+		<RadioGroup android:gravity="center_vertical"
+			android:layout_gravity="bottom" android:orientation="horizontal"
+			android:id="@+id/radioGroup1" android:background="@drawable/maintab_toolbar_bg"
+			android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<RadioButton android:text="@string/home"
+				android:checked="true" android:id="@+id/radio_button0"
+				android:layout_marginTop="2.0dip" android:drawableTop="@drawable/icon_1_n"
+				style="@style/main_tab_bottom" />
+			<RadioButton android:id="@+id/radio_button1"
+			android:layout_marginTop="2.0dip" android:text="@string/search"
+				android:drawableTop="@drawable/icon_2_n" style="@style/main_tab_bottom" />			
+			<RadioButton android:id="@+id/radio_button2"
+				android:layout_marginTop="2.0dip" android:text="@string/main_my_info"
+				android:drawableTop="@drawable/icon_3_n" style="@style/main_tab_bottom" />
+			<RadioButton android:id="@+id/radio_button3"
+				android:layout_marginTop="2.0dip" android:text="@string/main_news"
+				android:drawableTop="@drawable/icon_4_n" style="@style/main_tab_bottom" />
+			<RadioButton android:id="@+id/radio_button4"
+				android:layout_marginTop="2.0dip" android:text="@string/history"
+				android:drawableTop="@drawable/icon_5_n" style="@style/main_tab_bottom" />
+		</RadioGroup>
+	</LinearLayout>
+
+</TabHost>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/search_bg" android:orientation="vertical"
+	android:focusableInTouchMode="true">
+	<ImageView android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:id="@+id/imageView1"
+		android:layout_gravity="center_horizontal" android:src="@drawable/wiki" android:layout_marginTop="5dp"></ImageView>
+	<RadioGroup android:layout_height="wrap_content" android:id="@+id/radioGroup1"
+		android:orientation="horizontal" android:layout_width="wrap_content"
+		android:layout_gravity="center" android:layout_marginTop="5dp" android:layout_marginBottom="5dp">
+		<RadioButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/radio0"
+			android:checked="true" android:text="@string/content_search"
+			android:layout_gravity="center" android:textSize="20dp"></RadioButton>
+		<RadioButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/radio1"
+			android:text="@string/catagory_search" android:layout_gravity="center"
+			android:textSize="20dp"></RadioButton>
+	</RadioGroup>
+	<LinearLayout android:id="@+id/linearLayout1"
+		android:layout_width="match_parent" android:layout_height="match_parent">
+		<EditText android:layout_height="wrap_content"
+			android:background="@drawable/search_edittext_bg"
+			android:layout_width="fill_parent" android:layout_weight="1.0"
+			android:imeOptions="actionDone" android:id="@+id/searchText"
+			android:layout_marginTop="2dp"></EditText>
+		<Button android:layout_height="wrap_content" android:id="@+id/searchButton"
+			android:layout_width="wrap_content" 
+			android:background="@drawable/search_button_bg"></Button>
+	</LinearLayout>
+
+</LinearLayout>

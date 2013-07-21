@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:background="@drawable/search_bg" android:id="@+id/mainlayout" android:orientation="horizontal">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout1" android:orientation="vertical" android:layout_weight="1">
+        <TextView android:text="TextView" android:layout_width="wrap_content" android:layout_margin="5dip" android:textColor="#000000" android:layout_height="wrap_content" android:id="@+id/sonCategoryTextView" android:textSize="22dip"></TextView>
+        <ListView android:layout_width="fill_parent" android:layout_margin="5dip" android:layout_height="wrap_content" android:divider="#00000000" android:cacheColorHint="#00000000" android:id="@+id/sonCategoryListView" android:dividerHeight="1px"></ListView>
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/linearLayout2" android:orientation="vertical" android:layout_weight="1">
+        <TextView android:text="@string/page_in_category" android:layout_width="wrap_content" android:layout_margin="5dip" android:textColor="#000000" android:layout_height="wrap_content" android:id="@+id/pageTextView" android:textSize="22dip"></TextView>
+        <ListView android:layout_width="fill_parent" android:layout_margin="5dip" android:layout_height="wrap_content" android:divider="#00000000" android:cacheColorHint="#00000000" android:id="@+id/pageListView" android:dividerHeight="1px"></ListView>
+    </LinearLayout>
+</LinearLayout>
